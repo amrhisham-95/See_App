@@ -1,7 +1,7 @@
 package com.example.moviesapp.utils
 
 object Constants {
-    const val API_KEY = "fea61586105c843efd95c7508ce9cb24"
+    const val API_KEY = ""
     const val BASE_URL = "https://api.themoviedb.org/3/"
     const val SEARCH_PATH = "search/movie"
     const val TOP_RATED_PATH = "movie/top_rated"
