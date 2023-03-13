@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/main">
+        <menu>
+
+            <item
+                android:id="@+id/main"
+                android:title="@string/movies_and_tv_series"
+                android:icon="@drawable/movie_creation"
+                />
+        </menu>
+
+    </item>
+
+
+    <item android:title="@string/sign_out">
+        <menu>
+            <item android:id="@+id/signOut"
+                android:title="@string/sign_in_with_another_account"
+                android:icon="@drawable/keyboard_return"
+                />
+
+        </menu>
+    </item>
+</menu>

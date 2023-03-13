@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph2.xml"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.moviesapp.fragments.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_contentFragment2"
+            app:destination="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.example.moviesapp.fragments.ContentFragment"
+        android:label="ContentFragment"
+        tools:layout="@layout/fragment_content">
+        <action
+            android:id="@+id/action_contentFragment2_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_nowPlayingMovieDetailFragment"
+            app:destination="@id/nowPlayingMovieDetailFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_upComingDetailMovieFragment"
+            app:destination="@id/upComingDetailMovieFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_detailTVFragment"
+            app:destination="@id/detailTVFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_airingTodayTVFragment"
+            app:destination="@id/airingTodayTVFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_onTheAirTVFragment"
+            app:destination="@id/onTheAirTVFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.example.moviesapp.fragments.TopMovieDetailMovieFragment"
+        android:label="DetailMovieFragment"
+        tools:layout="@layout/fragment_detail_movie_top_movie">
+        <argument
+            android:name="topRatedMovieArguments"
+            app:argType="com.example.moviesapp.models.DetailsOfTopRated" />
+        <action
+            android:id="@+id/action_detailMovieFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailTVFragment"
+        android:name="com.example.moviesapp.fragments.TopRatedDetailTVFragment"
+        android:label="DetailTVFragment"
+        tools:layout="@layout/fragment_detail_t_v_top_rated">
+        <argument
+            android:name="topRatedTVArguments"
+            app:argType="com.example.moviesapp.models.DetailsOfTopRatedTV" />
+        <action
+            android:id="@+id/action_detailTVFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nowPlayingMovieDetailFragment"
+        android:name="com.example.moviesapp.fragments.NowPlayingMovieDetailFragment"
+        android:label="NowPlayingMovieDetailFragment"
+        tools:layout="@layout/fragment_now_playing_movie_detail">
+        <argument
+            android:name="nowPlayingMovieDetailArguments"
+            app:argType="com.example.moviesapp.models.DetailsOfNowPlaying" />
+        <action
+            android:id="@+id/action_nowPlayingMovieDetailFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upComingDetailMovieFragment"
+        android:name="com.example.moviesapp.fragments.UpComingDetailMovieFragment"
+        android:label="UpComingDetailMovieFragment"
+        tools:layout="@layout/fragment_up_coming_detail_movie">
+        <argument
+            android:name="upComingMovieDetailArguments"
+            app:argType="com.example.moviesapp.models.DetailsOfUpComing" />
+        <action
+            android:id="@+id/action_upComingDetailMovieFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/airingTodayTVFragment"
+        android:name="com.example.moviesapp.fragments.AiringTodayTVFragment"
+        android:label="AiringTodayTVFragment"
+        tools:layout="@layout/fragment_airing_today_t_v">
+        <argument
+            android:name="airingTodayTVDetailArguments"
+            app:argType="com.example.moviesapp.models.DetailsOfAiringTodayTV" />
+        <action
+            android:id="@+id/action_airingTodayTVFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onTheAirTVFragment"
+        android:name="com.example.moviesapp.fragments.OnTheAirTVFragment"
+        android:label="OnTheAirTVFragment"
+        tools:layout="@layout/fragment_on_the_air_t_v">
+        <argument
+            android:name="onTheAirTVDetailArguments"
+            app:argType="com.example.moviesapp.models.DetailsOfOnTheAirTV" />
+        <action
+            android:id="@+id/action_onTheAirTVFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+</navigation>
