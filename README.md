@@ -18,16 +18,17 @@
 
 ## Architecture
 - The application was built based on the following:
+1.Dependency Injection: Dagger Hilt is used.
 
-1.Architecture Pattern : MVVM (Model-View-ViewModel) is used in this project.
+2.Architecture Pattern : MVVM (Model-View-ViewModel) is used in this project.
 
-2.The DiffUtil Recycler Adapter is used To update data automatically and more flexibly.
+3.The DiffUtil Recycler Adapter is used To update data automatically and more flexibly.
 
-3.Pagination Principle is used with the recyclerview to Infinite data load from the network.
+4.Pagination Principle is used with the recyclerview to Infinite data load from the network.
 
-4.I Used TabLayout, Navigation Drawer, and also Menu in this app.
+5.I Used TabLayout, Navigation Drawer, and also Menu in this app.
 
-5.I connect the app with Firebase for Sign in & sign up by two ways: Email&Password Or Google.
+6.I connect the app with Firebase for Sign in & sign up by two ways: Email&Password Or Google.
 
 ## Requirements
 - Create API Key from website of The Movie Database (TMDB) First (https://www.themoviedb.org/).
