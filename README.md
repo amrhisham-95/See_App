@@ -18,6 +18,7 @@
 
 ## Architecture
 - The application was built based on the following:
+
 1.Dependency Injection: Dagger Hilt is used.
 
 2.Architecture Pattern : MVVM (Model-View-ViewModel) is used in this project.
